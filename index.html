@@ -596,14 +596,6 @@
 }
 
 @media (max-width: 768px) {
-  #experience {
-    grid-template-columns: 1fr !important;
-  }
-
-  #tools {
-    grid-template-columns: 1fr !important;
-  }
-} {
   nav { 
     padding: 1.2rem 1.5rem; 
   }
@@ -617,6 +609,23 @@
   #skills, 
   #contact { 
     grid-template-columns: 1fr; 
+  }
+
+  #experience {
+    grid-template-columns: 1fr !important;
+  }
+
+  #tools {
+    grid-template-columns: 1fr !important;
+  }
+
+  #experience > div {
+    padding: 3.5rem 1.5rem !important;
+    border-right: none !important;
+  }
+
+  #experience > div:first-child {
+    border-bottom: 1px solid var(--border);
   }
 
   .hero-left { 
@@ -676,15 +685,8 @@
   .brands-grid { 
     grid-template-columns: repeat(2, 1fr); 
   }
-  @media (max-width: 768px) {
-  #experience {
-    grid-template-columns: 1fr !important;
-  }
-
-  #tools {
-    grid-template-columns: 1fr !important;
-  }
 }
+
 .about-body p,
 .skills-left p,
 #tools p,
